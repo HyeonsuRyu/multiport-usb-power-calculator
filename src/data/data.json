@@ -1,0 +1,412 @@
+{
+    "brands": [
+        {
+            "name": "UGREEN",
+            "models": [
+                {
+                    "model": "X766",
+                    "total_output_watts": 200,
+                    "total_ports": 8,
+                    "profiles": {
+                        "1": [
+                            {
+                                "active_ports": ["C1"],
+                                "distribution": { "C1": 100 }
+                            },
+                            {
+                                "active_ports": ["C2"],
+                                "distribution": { "C2": 100 }
+                            },
+                            {
+                                "active_ports": ["C3"],
+                                "distribution": { "C3": 100 }
+                            },
+                            {
+                                "active_ports": ["C4"],
+                                "distribution": { "C4": 30 }
+                            },
+                            {
+                                "active_ports": ["C5"],
+                                "distribution": { "C5": 30 }
+                            },
+                            {
+                                "active_ports": ["C6"],
+                                "distribution": { "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["A1"],
+                                "distribution": { "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["A2"],
+                                "distribution": { "A2": 15 }
+                            }
+                        ],
+                        "2": [
+                            {
+                                "active_ports": ["C1", "C2"],
+                                "distribution": { "C1": 100, "C2": 85 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3"],
+                                "distribution": { "C1": 100, "C3": 85 }
+                            },
+                            {
+                                "active_ports": ["C1", "C4"],
+                                "distribution": { "C1": 100, "C4": 30 }
+                            },
+                            {
+                                "active_ports": ["C1", "C5"],
+                                "distribution": { "C1": 100, "C5": 30 }
+                            },
+                            {
+                                "active_ports": ["C1", "C6"],
+                                "distribution": { "C1": 100, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "A1"],
+                                "distribution": { "C1": 100, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "A2"],
+                                "distribution": { "C1": 100, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C2", "C3"],
+                                "distribution": { "C2": 100, "C3": 85 }
+                            },
+                            {
+                                "active_ports": ["C2", "C4"],
+                                "distribution": { "C2": 100, "C4": 30 }
+                            },
+                            {
+                                "active_ports": ["C2", "C5"],
+                                "distribution": { "C2": 100, "C5": 30 }
+                            },
+                            {
+                                "active_ports": ["C2", "C6"],
+                                "distribution": { "C2": 100, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C2", "A1"],
+                                "distribution": { "C2": 100, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C2", "A2"],
+                                "distribution": { "C2": 100, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C3", "C4"],
+                                "distribution": { "C3": 100, "C4": 30 }
+                            },
+                            {
+                                "active_ports": ["C3", "C5"],
+                                "distribution": { "C3": 100, "C5": 30 }
+                            },
+                            {
+                                "active_ports": ["C3", "C6"],
+                                "distribution": { "C3": 100, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C3", "A1"],
+                                "distribution": { "C3": 100, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C3", "A2"],
+                                "distribution": { "C3": 100, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C4", "C5"],
+                                "distribution": { "C4": 7.5, "C5": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C4", "C6"],
+                                "distribution": { "C4": 30, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C4", "A1"],
+                                "distribution": { "C4": 30, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C4", "A2"],
+                                "distribution": { "C4": 30, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C5", "C6"],
+                                "distribution": { "C5": 30, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C5", "A1"],
+                                "distribution": { "C5": 30, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C5", "A2"],
+                                "distribution": { "C5": 30, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C6", "A1"],
+                                "distribution": { "C6": 7.5, "A1": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C6", "A2"],
+                                "distribution": { "C6": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["A1", "A2"],
+                                "distribution": { "A1": 7.5, "A2": 7.5 }
+                            }
+                        ],
+                        "4": [
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 30 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C5"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C5": 30 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C6"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "A1"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "A2"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C4", "C5"],
+                                "distribution": { "C1": 100, "C2": 45, "C4": 7.5, "C5": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C4", "C6"],
+                                "distribution": { "C1": 100, "C2": 45, "C4": 30, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C4", "A1"],
+                                "distribution": { "C1": 100, "C2": 45, "C4": 30, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C4", "A2"],
+                                "distribution": { "C1": 100, "C2": 45, "C4": 30, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C5", "C6"],
+                                "distribution": { "C1": 65, "C2": 65, "C5": 30, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C5", "A1"],
+                                "distribution": { "C1": 65, "C2": 65, "C5": 30, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C5", "A2"],
+                                "distribution": { "C1": 65, "C2": 65, "C5": 30, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C6", "A1"],
+                                "distribution": { "C1": 100, "C2": 65, "C6": 7.5, "A1": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C6", "A2"],
+                                "distribution": { "C1": 100, "C2": 65, "C6": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "A1", "A2"],
+                                "distribution": { "C1": 100, "C2": 65, "A1": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3", "C4", "C5"],
+                                "distribution": { "C1": 100, "C3": 65, "C4": 7.5, "C5": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3", "C4", "C6"],
+                                "distribution": { "C1": 100, "C3": 65, "C4": 30, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3", "C4", "A1"],
+                                "distribution": { "C1": 100, "C3": 65, "C4": 30, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3", "C4", "A2"],
+                                "distribution": { "C1": 100, "C3": 65, "C4": 30, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3", "C5", "C6"],
+                                "distribution": { "C1": 65, "C3": 65, "C5": 30, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3", "C5", "A1"],
+                                "distribution": { "C1": 65, "C3": 65, "C5": 30, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3", "C5", "A2"],
+                                "distribution": { "C1": 65, "C3": 65, "C5": 30, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3", "C6", "A1"],
+                                "distribution": { "C1": 100, "C3": 65, "C6": 7.5, "A1": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3", "C6", "A2"],
+                                "distribution": { "C1": 100, "C3": 65, "C6": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3", "A1", "A2"],
+                                "distribution": { "C1": 100, "C3": 65, "A1": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C4", "C5", "C6"],
+                                "distribution": { "C1": 100, "C4": 7.5, "C5": 7.5, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C4", "C5", "A1"],
+                                "distribution": { "C1": 100, "C4": 7.5, "C5": 7.5, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C4", "C5", "A2"],
+                                "distribution": { "C1": 100, "C4": 7.5, "C5": 7.5, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C4", "C6", "A1"],
+                                "distribution": { "C1": 100, "C4": 30, "C6": 7.5, "A1": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C4", "C6", "A2"],
+                                "distribution": { "C1": 100, "C4": 30, "C6": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C4", "A1", "A2"],
+                                "distribution": { "C1": 100, "C4": 30, "A1": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C5", "C6", "A1"],
+                                "distribution": { "C1": 100, "C5": 30, "C6": 7.5, "A1": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C5", "C6", "A2"],
+                                "distribution": { "C1": 100, "C5": 30, "C6": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C5", "A1", "A2"],
+                                "distribution": { "C1": 100, "C5": 30, "A1": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C6", "A1", "A2"],
+                                "distribution": { "C1": 100, "C6": 5, "A1": 5, "A2": 5 }
+                            }
+                        ],
+                        "6": [
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4", "C5", "C6"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 7.5, "C5": 7.5, "C6": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4", "C5", "A1"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 7.5, "C5": 7.5, "A1": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4", "C5", "A2"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 7.5, "C5": 7.5, "A2": 15 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4", "C6", "A1"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 30, "C6": 7.5, "A1": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4", "C6", "A2"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 30, "C6": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4", "A1", "A2"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 30, "A1": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C5", "C6", "A1"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C5": 30, "C6": 7.5, "A1": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C5", "C6", "A2"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C5": 30, "C6": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C5", "A1", "A2"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C5": 30, "A1": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C4", "C6", "A1", "A2"],
+                                "distribution": { "C1": 100, "C2": 45, "C4": 30, "C6": 5, "A1": 5, "A2": 5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C5", "C6", "A1", "A2"],
+                                "distribution": { "C1": 100, "C2": 45, "C5": 30, "C6": 5, "A1": 5, "A2": 5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C4", "C5", "C6", "A1", "A2"],
+                                "distribution": { "C1": 100, "C4": 7.5, "C5": 7.5, "C6": 5, "A1": 5, "A2": 5 }
+                            },
+                            {
+                                "active_ports": ["C2", "C3", "C4", "C6", "A1", "A2"],
+                                "distribution": { "C2": 65, "C3": 65, "C4": 30, "C6": 5, "A1": 5, "A2": 5 }
+                            },
+                            {
+                                "active_ports": ["C2", "C3", "C5", "C6", "A1", "A2"],
+                                "distribution": { "C2": 65, "C3": 65, "C5": 30, "C6": 5, "A1": 5, "A2": 5 }
+                            },
+                            {
+                                "active_ports": ["C2", "C4", "C5", "C6", "A1", "A2"],
+                                "distribution": { "C2": 100, "C4": 7.5, "C5": 7.5, "C6": 5, "A1": 5, "A2": 5 }
+                            },
+                            {
+                                "active_ports": ["C3", "C4", "C5", "C6", "A1", "A2"],
+                                "distribution": { "C3": 100, "C4": 7.5, "C5": 7.5, "C6": 5, "A1": 5, "A2": 5 }
+                            }
+                        ],
+                        "7": [
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4", "C5", "C6", "A1"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 7.5, "C5": 7.5, "C6": 7.5, "A1": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4", "C5", "C6", "A2"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 7.5, "C5": 7.5, "C6": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4", "C5", "A1", "A2"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 7.5, "C5": 7.5, "A1": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4", "C6", "A1", "A2"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 30, "C6": 7.5, "A1": 7.5, "A2": 7.5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C5", "C6", "A1", "A2"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C5": 30, "C6": 5, "A1": 5, "A2": 5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C2", "C4", "C5", "C6", "A1", "A2"],
+                                "distribution": { "C1": 100, "C2": 65, "C4": 7.5, "C5": 7.5, "C6": 5, "A1": 5, "A2": 5 }
+                            },
+                            {
+                                "active_ports": ["C1", "C3", "C4", "C5", "C6", "A1", "A2"],
+                                "distribution": { "C1": 100, "C3": 65, "C4": 7.5, "C5": 7.5, "C6": 5, "A1": 5, "A2": 5 }
+                            },
+                            {
+                                "active_ports": ["C2", "C3", "C4", "C5", "C6", "A1", "A2"],
+                                "distribution": { "C2": 100, "C3": 65, "C4": 7.5, "C5": 7.5, "C6": 5, "A1": 5, "A2": 5 }
+                            }
+                        ],
+                        "8": [
+                            {
+                                "active_ports": ["C1", "C2", "C3", "C4", "C5", "C6", "A1", "A2"],
+                                "distribution": { "C1": 65, "C2": 45, "C3": 45, "C4": 7.5, "C5": 7.5, "C6": 5, "A1": 5, "A2": 5 }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
