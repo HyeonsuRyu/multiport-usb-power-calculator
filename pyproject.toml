@@ -20,5 +20,5 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 packages = [
-    { include = "multiport_usb_power_calculator", from="src" }
+    { include = "src" }
 ]
