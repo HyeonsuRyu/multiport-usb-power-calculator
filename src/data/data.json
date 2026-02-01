@@ -6,7 +6,16 @@
                 {
                     "model": "X766",
                     "total_output_watts": 200,
-                    "total_ports": 8,
+                    "ports": {
+                        "C1": { "type": "USB-C", "max_wattage": 100 },
+                        "C2": { "type": "USB-C", "max_wattage": 100 },
+                        "C3": { "type": "USB-C", "max_wattage": 100 },
+                        "C4": { "type": "USB-C", "max_wattage": 30 },
+                        "C5": { "type": "USB-C", "max_wattage": 30 },
+                        "C6": { "type": "USB-C", "max_wattage": 15 },
+                        "A1": { "type": "USB-A", "max_wattage": 15 },
+                        "A2": { "type": "USB-A", "max_wattage": 15 }
+                    },
                     "profiles": {
                         "1": [
                             {
