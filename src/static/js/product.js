@@ -47,11 +47,13 @@ function updatePortInfo(selectedPorts) {
     const profiles = portsData.profiles ? portsData.profiles[String(count)] : null;
     let distribution = null;
 
+    /*
     console.log("=== Debugging updatePortInfo ===");
     console.log("Selected Ports:", selectedPorts);
     console.log("Count:", count, "Profiles key:", String(count));
     console.log("Profiles available:", profiles);
-
+    */
+   
     if (profiles) {
         for (const profile of profiles) {
             const active = profile.active_ports.map(p => p.trim().toUpperCase()).sort().join(",");
