@@ -1,5 +1,22 @@
 body {
     background-color: #f8f9fa;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.list-group-item {
+    font-size: 1rem;
+}
+
+.text-primary {
+    font-weight: 500;
+}
+
+.text-muted {
+    font-style: italic;
 }
 
 .range-slider {
@@ -8,39 +25,36 @@ body {
     height: 30px;
 }
 
-.range-slider input[type=range] {
-    position: absolute;
-    pointer-events: none;
+/* 공통 슬라이더 스타일 */
+input[type=range] {
+    -webkit-appearance: none; /* 기본 브라우저 스타일 제거 */
+    appearance: none;
     width: 100%;
     height: 8px;
-    background: transparent;
-
-    /* 호환성을 위한 appearance 정의 */
-    -webkit-appearance: none; /* Chrome, Safari */
-    -moz-appearance: none;    /* Firefox */
-    appearance: none;         /* 표준 */
+    border-radius: 5px;
+    background: linear-gradient(to right, #0d6efd 0%, #0d6efd var(--value, 50%), #e9ecef var(--value, 50%), #e9ecef 100%);
+    outline: none;
+    border: 1px solid #ccc; /* 테두리 색 */
 }
 
-.range-slider input[type=range]::-webkit-slider-thumb {
-    pointer-events: all;
+/* 슬라이더 핸들 (크롬/사파리) */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #0078d7;
+    background: #0d6efd; /* 파란색 핸들 */
+    border: 2px solid #fff;
     cursor: pointer;
-
-    -webkit-appearance: none; /* WebKit */
-    appearance: none;         /* 표준 */
 }
 
-.range-slider input[type=range]::-moz-range-thumb {
-    pointer-events: all;
+/* 슬라이더 핸들 (파이어폭스) */
+input[type=range]::-moz-range-thumb {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #0078d7;
+    background: #0d6efd;
+    border: 2px solid #fff;
     cursor: pointer;
-
-    -moz-appearance: none; /* Firefox */
-    appearance: none;      /* 표준 */
 }

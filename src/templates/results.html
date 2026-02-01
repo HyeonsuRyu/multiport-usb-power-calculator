@@ -14,16 +14,12 @@
     {% if results %}
         <ul class="list-group">
             {% for r in results %}
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div>
-                        <span class="fw-bold">{{ r.brand }}</span> -
-                        <span>{{ r.watts }}W</span> -
-                        <span class="text-primary">{{ r.model }}</span>
-                    </div>
-                    <!-- 상세보기 버튼은 나중에 product.html 연결할 때 활성화 -->
-                    {# <a class="btn btn-outline-primary btn-sm" href="{{ url_for('main.product_page', brand=r.brand, model=r.model) }}">
-                        상세보기
-                    </a> #}
+                <li class="list-group-item">
+                    <span class="fw-bold">{{ r.brand }}</span> -
+                    <span class="text-primary">{{ r.model }}</span> -
+                    <span>{{ r.watts }}W</span> -
+                    <span>USB-C {{ r.c_ports }}개</span> -
+                    <span>USB-A {{ r.a_ports }}개</span>
                 </li>
             {% endfor %}
         </ul>

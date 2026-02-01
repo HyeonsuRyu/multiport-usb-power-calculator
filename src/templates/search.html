@@ -5,6 +5,8 @@
     <title>제품 검색</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- noUiSlider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@15.7.0/dist/nouislider.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
@@ -12,6 +14,8 @@
 <div class="container mt-5">
     <h1 class="mb-4 text-primary">제품 검색</h1>
     <form action="{{ url_for('main.search') }}" method="get" class="row g-3">
+
+        <!-- 브랜드 선택 -->
         <div class="col-md-4">
             <label class="form-label">브랜드</label>
             <select name="brand" class="form-select">
@@ -19,10 +23,10 @@
                 {% for brand in brands %}
                     <option value="{{ brand }}">{{ brand }}</option>
                 {% endfor %}
-
             </select>
         </div>
 
+        <!-- 모델명 자동완성 -->
         <div class="col-md-4">
             <label class="form-label">모델명</label>
             <input type="text" name="model" class="form-control" placeholder="예: X766" list="modelList">
@@ -33,22 +37,50 @@
             </datalist>
         </div>
 
-
-        <div class="col-md-8">
+        <!-- 총 출력 -->
+        <div class="col-md-12">
             <label class="form-label">총 출력 (W)</label>
-            <div class="range-slider">
-                <input type="range" name="min_watts" min="0" max="300" value="0" id="minRange">
-                <input type="range" name="max_watts" min="0" max="300" value="300" id="maxRange">
-            </div>
-            <p>선택 범위: <span id="rangeValue">0W - 300W</span></p>
+            <div id="wattsSlider" 
+                data-min="{{ min_watts }}" 
+                data-max="{{ max_watts }}"></div>
+            <p>선택 범위: <span id="wattsValue">{{ min_watts }}W - {{ max_watts }}W</span></p>
+            <input type="hidden" name="min_watts" id="minWatts">
+            <input type="hidden" name="max_watts" id="maxWatts">
         </div>
 
+        <!-- USB-C -->
+        <div class="col-md-12">
+            <label class="form-label">USB-C 포트 수</label>
+            <div id="cSlider" 
+                data-min="{{ min_c }}" 
+                data-max="{{ max_c }}"></div>
+            <p>선택 범위: <span id="cValue">{{ min_c }} - {{ max_c }}</span></p>
+            <input type="hidden" name="min_c" id="minC">
+            <input type="hidden" name="max_c" id="maxC">
+        </div>
+
+        <!-- USB-A -->
+        <div class="col-md-12">
+            <label class="form-label">USB-A 포트 수</label>
+            <div id="aSlider" 
+                data-min="{{ min_a }}" 
+                data-max="{{ max_a }}"></div>
+            <p>선택 범위: <span id="aValue">{{ min_a }} - {{ max_a }}</span></p>
+            <input type="hidden" name="min_a" id="minA">
+            <input type="hidden" name="max_a" id="maxA">
+        </div>
+
+
+        <!-- 검색 버튼 -->
         <div class="col-12">
             <button type="submit" class="btn btn-primary">검색</button>
         </div>
     </form>
 </div>
 
+<!-- noUiSlider JS -->
+<script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.0/dist/nouislider.min.js"></script>
+<!-- Custom JS -->
 <script src="{{ url_for('static', filename='js/search.js') }}"></script>
 </body>
 </html>
