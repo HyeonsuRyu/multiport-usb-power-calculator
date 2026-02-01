@@ -40,6 +40,13 @@
 
 <script>
     const portsData = {{ product|tojson }};
+    const staticUrls = {
+    A_selected: "{{ url_for('static', filename='images/A_selected.png') }}",
+    C_selected: "{{ url_for('static', filename='images/C_selected.png') }}",
+    A: "{{ url_for('static', filename='images/A.png') }}",
+    C: "{{ url_for('static', filename='images/C.png') }}"
+    };
+
 </script>
 <script src="{{ url_for('static', filename='js/product.js') }}"></script>
 
