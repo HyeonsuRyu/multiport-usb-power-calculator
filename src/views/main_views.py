@@ -1,7 +1,7 @@
 import json
 from flask import Blueprint, render_template, request
 
-bp = Blueprint('main', __name__, url_prefix='/')
+bp = Blueprint('main', __name__, url_prefix='/multiport_calc')
 
 with open("src/data/data.json", "r", encoding="utf-8") as f:
     data = json.load(f)
