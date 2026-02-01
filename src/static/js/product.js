@@ -26,20 +26,21 @@ document.addEventListener("DOMContentLoaded", () => {
 function setSelectedImage(img) {
     const type = img.dataset.type;
     if (type === "A") {
-        img.src = "/static/images/A_selected.png";
+        img.src = "{{ url_for('static', filename='images/A_selected.png') }}";
     } else if (type === "C") {
-        img.src = "/static/images/C_selected.png";
+        img.src = "{{ url_for('static', filename='images/C_selected.png') }}";
     }
 }
 
 function resetImage(img) {
     const type = img.dataset.type;
     if (type === "A") {
-        img.src = "/static/images/A.png";
+        img.src = "{{ url_for('static', filename='images/A.png') }}";
     } else if (type === "C") {
-        img.src = "/static/images/C.png";
+        img.src = "{{ url_for('static', filename='images/C.png') }}";
     }
 }
+
 
 function updatePortInfo(selectedPorts) {
     const count = selectedPorts.length;
