@@ -1,0 +1,20 @@
+body {
+    background-color: #f8f9fa;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.list-group-item {
+    font-size: 1rem;
+}
+
+.text-primary {
+    font-weight: 500;
+}
+
+.text-muted {
+    font-style: italic;
+}

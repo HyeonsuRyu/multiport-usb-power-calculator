@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ brand }} {{ product.model }} 상세 정보</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/product.css') }}">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4 text-success">{{ brand }} {{ product.model }}</h1>
+    <p>총 출력: {{ product.total_output_watts }}W</p>
+
+    <h3>포트 구성</h3>
+    <div class="d-flex flex-wrap">
+    {% for port, spec in product.ports.items() %}
+        <div class="port">
+            {% if spec.type == "USB-C" %}
+                <img src="{{ url_for('static', filename='images/C.png') }}"
+                    alt="USB-C"
+                    class="port-img"
+                    data-type="C"
+                    data-label="{{ port }}">
+            {% elif spec.type == "USB-A" %}
+                <img src="{{ url_for('static', filename='images/A.png') }}"
+                    alt="USB-A"
+                    class="port-img"
+                    data-type="A"
+                    data-label="{{ port }}">
+            {% endif %}
+            <div class="port-label">{{ port }}</div>
+            <small class="port-info"
+                data-port="{{ port }}">
+                {{ spec.type }}<br>(Max. {{ spec.max_wattage }}W)
+            </small>
+
+        </div>
+    {% endfor %}
+</div>
+
+<script>
+    const portsData = {{ product|tojson }};
+</script>
+<script src="{{ url_for('static', filename='js/product.js') }}"></script>
+
+</body>
+</html>

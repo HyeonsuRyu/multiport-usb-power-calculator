@@ -72,3 +72,12 @@ def search():
             })
 
     return render_template("results.html", results=results)
+
+@bp.route("/product/<brand>/<model>")
+def product_detail(brand, model):
+    for b in data["brands"]:
+        if b["name"].lower() == brand.lower():
+            for m in b["models"]:
+                if m["model"].lower() == model.lower():
+                    return render_template("product.html", product=m, brand=b["name"])
+    return "제품을 찾을 수 없습니다.", 404

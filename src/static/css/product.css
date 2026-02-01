@@ -1,0 +1,38 @@
+.port {
+    display: flex;              /* flexbox 사용 */
+    flex-direction: column;     /* 세로 방향으로 쌓기 */
+    align-items: center;        /* 가로 중앙정렬 */
+    justify-content: center;    /* 세로 중앙정렬 */
+    text-align: center;         /* 텍스트 중앙정렬 */
+    margin: 10px;
+    cursor: pointer;
+}
+
+.port img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 6px;         /* 이미지와 라벨 사이 간격 */
+    transition: transform 0.2s ease;
+}
+
+.port img:hover {
+    transform: scale(1.1);
+}
+
+.port-label {
+    font-weight: bold;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.port-info {
+    display: block;
+    margin-top: 4px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.port-img.selected {
+    border: 2px solid #0d6efd;
+    border-radius: 6px;
+}
