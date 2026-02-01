@@ -229,6 +229,21 @@ files = [
 ]
 
 [[package]]
+name = "python-dotenv"
+version = "1.2.1"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = [
+    {file = "python_dotenv-1.2.1-py3-none-any.whl", hash = "sha256:b81ee9561e9ca4004139c6cbba3a238c32b03e4894671e181b671e8cb8425d61"},
+    {file = "python_dotenv-1.2.1.tar.gz", hash = "sha256:42667e897e16ab0d66954af0e60a9caa94f0fd4ecf3aaf6d2d260eec1aa36ad6"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "werkzeug"
 version = "3.1.5"
 description = "The comprehensive WSGI web application library."
@@ -249,4 +264,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "3.14.2"
-content-hash = "2956c44b3b3a4f300ac0c934760b0b483d78a74d65efd6b513bbe61f3d439efc"
+content-hash = "aa67f9214a5e669bb92b6f76ce93cf423dbc4769f191688f06914532e2b84143"
