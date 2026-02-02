@@ -9,7 +9,7 @@
                     "C1": { "type": "USB-C", "max_wattage": 65 },
                     "C2": { "type": "USB-C", "max_wattage": 65 },
                     "A1": { "type": "USB-A", "max_wattage": 30 }
-                }
+                },
                 "profiles": {
                     "1": [
                         {
