@@ -1,6 +1,52 @@
 {
     "brands": [
         {
+            "name": "SINJIMORU",
+            "models": [
+                "model": "ZH-3U24T",
+                "total_output_watts": 65,
+                "ports: {
+                    "C1": { "type": "USB-C", "max_wattage": 65 },
+                    "C2": { "type": "USB-C", "max_wattage": 65 },
+                    "A1": { "type": "USB-A", "max_wattage": 30 }
+                }
+                "profiles": {
+                    "1": [
+                        {
+                            "active_ports": ["C1"],
+                            "distribution": { "C1": 65 }
+                        },
+                        {
+                            "active_ports": ["C2"],
+                            "distribution": { "C2": 65 }
+                        },
+                        {
+                            "active_ports": ["A1"],
+                            "distribution": { "A1": 30 }
+                        }
+                    ],
+                    "2": [
+                        {
+                            "active_ports": ["C1", "C2"],
+                            "distribution": { "C1": 45, "C2": 18 }
+                        },
+                        {
+                            "active_ports": ["C1", "A1"],
+                            "distribution": { "C1": 45, "A1": 18 }
+                        },
+                        {
+                            "active_ports": ["C2", "A1"],
+                            "distribution": { "C2": 20, "A1": 20 }
+                        }
+                    ],
+                    "3": [
+                        {
+                            "active_ports": ["C1", "C2", "A1"],
+                            "distribution": { "C1": 45, "C2": 15, "A1": 15 }
+                        }
+                    ]
+                }
+            ]
             "name": "UGREEN",
             "models": [
                 {
