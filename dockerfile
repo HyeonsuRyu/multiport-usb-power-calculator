@@ -10,4 +10,4 @@ COPY . .
 ENV FLASK_APP=src
 ENV APP_PATH=/multiport_calc
 
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8000", "src:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8001", "src:app"]
