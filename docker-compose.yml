@@ -4,5 +4,6 @@ services:
     container_name: multiport_calc
     env_file:
       - .env
-    expose: 8001
+    expose:
+      - "8001"
     restart: unless-stopped
