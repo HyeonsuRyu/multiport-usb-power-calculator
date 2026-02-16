@@ -1,5 +1,5 @@
 services:
-  flask:
+  multiport_calc:
     build: .
     container_name: multiport_calc
     env_file:
